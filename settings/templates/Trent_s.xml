@@ -1,0 +1,14 @@
+<templateSet group="Trent's">
+  <template name="ss6" value="function $SUPER$($ARG$) {&#10;    this.$ARG$ = $ARG$;&#10;}&#10;&#10;$SUPER$.prototype = {&#10;    $FUNC$: function($ARG2$) {&#10;        this.$ARG2$ = $ARG2$;&#10;    }&#10;};&#10;&#10;$SUPER$.prototype.constructor = $SUPER$;&#10;&#10;function $SUB$($SUBARG$) {&#10;    this.$SUBARG$ = $SUBARG$;&#10;    $SUPER$.call(this, &quot;$ARG$&quot;);&#10;}&#10;&#10;$SUB$.prototype = Object.create($SUPER$);&#10;&#10;$SUB$.prototype.constructor = $SUB$;" description="(ES6) Create an inheritance between super &amp; sub type" toReformat="false" toShortenFQNames="true">
+    <variable name="SUPER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNC" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUB" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUBARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ECMAScript6" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
